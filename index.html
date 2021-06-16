@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Pixel Art Maker</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+    <script defer src="script.js"></script>
+  </head>
+
+  <body>
+    <div class="col-sm-6">
+      <div class="row">
+        <div class="header">
+          <p>Paint a happy little picture!</p>
+          <h1>Pixel Art Maker</h1>
+        </div>
+        <div class="button">
+          <button
+            class="btn btn-success btn-sm"
+            type="button"
+          >
+            LET'S GET CRAZY
+          </button>
+        </div>
+        <div class="picturecontainer"></div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row1">
+        <div class="col-sm-7">
+          <div class="pick">
+            <form class="size-picker">
+              <h4>choose grid size</h4>
+              <input type="button" class="erase-mode" value="Erase" />
+              height:
+              <input type="number" class="input-height" name="height" min="1" max="180" value="80" />
+              width:
+              <input type="number" class="input-width" name="width" min="1" max="180" value="80" />
+              <input type="submit" class="submit-button" value="Submit" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="fill">
+      <input type="button" class="quick-fill" value="Fill" />
+    </div>
+    <div class="palettecontainer">
+      <div class="brushcolor"></div>
+      <input type="color" class="color-picker" id="colorPicker" />
+      <p1>Select Color</p1>
+      <button class="button-color" id="button2"></button>
+      <p1>Blue</p1>
+      <button class="button-color" id="button3"></button>
+      <p1>Green</p1>
+      <div>
+        <button class="button-color" id="button4"></button>
+        <p1>Yellow</p1>
+      </div>
+      <div>
+        <button class="button-color" id="button5"></button>
+        <p1>Orange</p1>
+      </div>
+      <div>
+        <button class="button-color" id="button6"></button>
+        <p1>Red</p1>
+	  </div>
+    </div>
+
+    <div class="saveload">
+      <button class="save">Save</button>
+      <button class="load">Load</button>
+    </div>
+
+    <table class="pixel-canvas"></table>
+  </body>
+</html>
